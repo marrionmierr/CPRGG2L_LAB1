@@ -1,0 +1,19 @@
+import java.io.*;
+// 1. Write a Java Program that will read the input file (data.txt) and add all the data in the text. The program will also create a file (sum.txt) and write the sum in the file created
+public class App {
+    public static void main(String[] args) throws IOException {
+        // Read data from "data.txt" file
+        BufferedReader reader = new BufferedReader(new FileReader("data.txt"));
+        String line;
+        int sum = 0;
+        while ((line = reader.readLine()) != null) {
+            sum += Integer.parseInt(line);
+        }
+        reader.close();
+
+        // Write sum to "sum.txt" file
+        BufferedWriter writer = new BufferedWriter(new FileWriter("sum.txt"));
+        writer.write(String.valueOf(sum));
+        writer.close();
+    }
+}
