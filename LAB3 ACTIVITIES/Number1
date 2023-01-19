@@ -7,7 +7,7 @@ public class number1 {
         System.out.println("Sum Digits: " + sumItDigits(1449));
         //Number 2
         System.out.print("Number 2: ");
-        System.out.println("Insert : " + asteris("LuisaAce"));
+        System.out.println("Insert : " + asteris("Mierr"));
         //Number 3
         System.out.print("Number 3: ");
         System.out.println("Bunny Ears: " + bunnyEars(2,15));
