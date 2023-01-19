@@ -1,0 +1,8 @@
+    // Labotory 3.1
+     public static int sumItDigits(int i) {
+        if (i == 0) {
+                return 0;
+            } else {
+                return (i % 10) + sumItDigits(i / 10);
+            }
+        }
